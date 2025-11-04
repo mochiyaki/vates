@@ -1,0 +1,24 @@
+ [tool.poetry]
+ name = "multimodal-narrative-architect"
+ version = "0.1.0"
+ description = "Backend service for the Agentic Storyboard Weaver hackathon project"
+ authors = ["Vates Hackathon Team <team@example.com>"]
+ readme = "README.md"
+ packages = [{ include = "narrative_architect", from = "src" }]
+
+ [tool.poetry.dependencies]
+ python = "^3.11"
+ fastapi = "^0.115.0"
+ uvicorn = { extras = ["standard"], version = "^0.30.1" }
+ python-multipart = "^0.0.9"
+ pillow = "^10.4.0"
+ mem0ai = "^0.1.0"
+
+ [tool.poetry.group.dev.dependencies]
+ httpx = "^0.27.0"
+ pytest = "^8.3.0"
+
+ [build-system]
+ requires = ["poetry-core>=1.8.0"]
+ build-backend = "poetry.core.masonry.api"
+
