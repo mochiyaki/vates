@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { Mic, MicOff, Sparkles, Wand2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
+// import { useNavigate } from "react-router-dom";
 
 interface VoiceAgentPanelProps {
   onNarrationUpdate: (narration: string) => void
@@ -11,6 +12,8 @@ interface VoiceAgentPanelProps {
 export function VoiceAgentPanel({ onNarrationUpdate }: VoiceAgentPanelProps) {
   const [isListening, setIsListening] = useState(false)
   const [transcript, setTranscript] = useState("")
+
+  // const navigate = useNavigate();
 
   const toggleListening = () => {
     setIsListening(!isListening)
@@ -111,6 +114,13 @@ export function VoiceAgentPanel({ onNarrationUpdate }: VoiceAgentPanelProps) {
           </div>
         )}
       </div>
+
+          <Button
+            size="lg"
+            onClick={toggleListening}
+            className="w-full gap-2 shadow-lg transition-all bg-gray-400"
+          > Story Generator - Plus! </Button>
+
     </div>
   )
 }
