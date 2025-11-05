@@ -14,4 +14,4 @@ npm run dev
 uvicorn backend.main:app --reload
 ```
 
-![banner](./adventure.jpg)
+![banner](./desert.jpg)
