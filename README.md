@@ -1,4 +1,4 @@
-## Vates
+# vates
 Let's go!
 
 ## our project in one sentence
